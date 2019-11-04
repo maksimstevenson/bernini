@@ -4,7 +4,7 @@
     "IE 11",
     "Firefox ESR"
   ],
-  "description": "Стартовый шаблон для вёрстки",
+  "description": "Bernini",
   "devDependencies": {
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
