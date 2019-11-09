@@ -1,1 +1,29 @@
-//Тут будет scss для header
+.header {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("../img/bg-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+    padding: 165px 270px 20px 270px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 70px;
+  line-height: 85px;
+  max-width: 267px;
+}
+
+.header__description {
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 340px;
+}
+
+.header__wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 740px;
+  justify-content: space-between;
+}

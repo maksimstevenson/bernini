@@ -1,0 +1,11 @@
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__list {
+    @include reset-list;
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+}

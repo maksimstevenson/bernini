@@ -14,13 +14,15 @@
     <include src="build/img/sprite/sprite.svg"></include>
   </div>
   <header class="header">
-    <div class="header__info-wrapper">
-      <h1 class="header__title">Bernini Design</h1>
-      <p class="header__description">Since 2016 we proudly provide design services</p>
-      <a href="/" class="button header__info-link">Contact Us</a>
-    </div>
-    <div class="header__image">
-      <img src="img/header-image.jpg" alt="">
+    <div class="header__wrapper">
+      <div class="header__info-wrapper">
+        <h1 class="header__title">Bernini Design</h1>
+        <p class="header__description">Since 2016 we proudly provide design services</p>
+        <a href="/" class="button header__info-link">Contact Us</a>
+      </div>
+      <div class="header__image">
+        <img src="img/header-image.jpg" alt="">
+      </div>
     </div>
     <div class="social">
       <ul class="social__list">
@@ -48,68 +50,6 @@
       </ul>
     </div>
 
-    <div class="overlay">
-      <section class="contact-us">
-        <h2 class="contact-us__title">Contact Us</h2>
-        <form action="" class="form contact-us__form">
-          <div class="form__inputs-wrapper">
-            <div class="form__wrapper">
-              <label for="" class="form__label">
-                <span>First Name:</span>
-                <input type="text">
-              </label>
-              <label for="" class="form__label">
-                <span>Last Name:</span>
-                <input type="text">
-              </label>
-            </div>
-            <div class="form__wrapper">
-              <label for="" class="form__label">
-                <span>Email:</span>
-                <input type="email">
-              </label>
-            </div>
-            <div class="form__wrapper">
-              <label for="">
-                <span>Message (optional):</span>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </label>
-            </div>
-          </div>
-          <div class="form__info-wrapper">
-            <div class="form__info-phone">
-              <span class="form__info-label">Phone Number:</span>
-              <a href="">+1 (323) 456-788</a>
-            </div>
-            <div class="form__info-email">
-              <span class="form__info-label">Email:</span>
-              <a href="">berninipd@gmail.com</a>
-            </div>
-            <div class="form__info-address">
-              <span class="form__info-label">Address</span>
-              <address>1095 Wilshire Blvd, Los Angeles<br>CA 90036</address>
-            </div>
-            <button class="button form__submit">Submit</button>
-          </div>
-        </form>
-        <button class="contact-us__close">
-          <svg width="36" height="36">
-            <use xlink:href="#close"></use>
-          </svg>
-        </button>
-      </section>
-      <div class="modal-success">
-        <p class="modal-success__text">Thank You!</p>
-        <p class="modal-success__message">Our representative will contact you</p>
-        <button class="modal-success__close">
-          <svg width="36" height="36">
-            <use xlink:href="#close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-    </section>
-    </div>
   </header>
   <section class="works">
     <h2 class="visually-hidden">Our works</h2>
@@ -227,6 +167,67 @@
       </p>
     </div>
   </section>
+
+  <div class="overlay">
+      <div class="contact-us">
+        <h2 class="contact-us__title">Contact Us</h2>
+        <form action="" class="form contact-us__form">
+          <div class="form__inputs-wrapper">
+            <div class="form__wrapper">
+              <label for="" class="form__label">
+                <span>First Name:</span>
+                <input type="text">
+              </label>
+              <label for="" class="form__label">
+                <span>Last Name:</span>
+                <input type="text">
+              </label>
+            </div>
+            <div class="form__wrapper">
+              <label for="" class="form__label">
+                <span>Email:</span>
+                <input type="email">
+              </label>
+            </div>
+            <div class="form__wrapper">
+              <label for="">
+                <span>Message (optional):</span>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="form__info-wrapper">
+            <div class="form__info-phone">
+              <span class="form__info-label">Phone Number:</span>
+              <a href="">+1 (323) 456-788</a>
+            </div>
+            <div class="form__info-email">
+              <span class="form__info-label">Email:</span>
+              <a href="">berninipd@gmail.com</a>
+            </div>
+            <div class="form__info-address">
+              <span class="form__info-label">Address</span>
+              <address>1095 Wilshire Blvd, Los Angeles<br>CA 90036</address>
+            </div>
+            <button class="button form__submit">Submit</button>
+          </div>
+        </form>
+        <button class="contact-us__close">
+          <svg width="36" height="36">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-success">
+        <p class="modal-success__text">Thank You!</p>
+        <p class="modal-success__message">Our representative will contact you</p>
+        <button class="modal-success__close">
+          <svg width="36" height="36">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 </body>
 
 </html>
