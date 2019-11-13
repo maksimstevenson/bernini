@@ -1,0 +1,49 @@
+.story {
+  background-image: url("../img/story-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 720px;
+  padding: 50px;
+
+  overflow-x: hidden;
+}
+
+.story__title {
+  font-size: 70px;
+  line-height: 85px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.story__modal {
+  display: none;
+}
+
+.story__wrapper {
+  margin: 0 auto;
+  max-width: 700px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.story__list {
+    display: flex;
+}
+
+.story__list-in {
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.story__item {
+    cursor: pointer;
+    width: 160px;
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &--big {
+        width: 340px;
+    }
+}

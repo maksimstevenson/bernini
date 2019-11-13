@@ -13,7 +13,7 @@
   <div style="display: none;">
     <include src="build/img/sprite/sprite.svg"></include>
   </div>
-  <header class="header">
+  <header class="header slide">
     <div class="header__wrapper">
       <div class="header__info-wrapper">
         <h1 class="header__title">Bernini Design</h1>
@@ -51,183 +51,193 @@
     </div>
 
   </header>
-  <section class="works">
-    <h2 class="visually-hidden">Our works</h2>
-    <div class="works__list">
-      <div class="works__item">
-        <img src="img/works/1.jpg" alt="" class="works__item-image">
-        <div class="works__item-description">Studio Apartment in LA</div>
-      </div>
-      <div class="works__item">
-        <img src="img/works/2.jpg" alt="" class="works__item-image">
-        <div class="works__item-description">Restaraunt in Moscow</div>
-      </div>
-      <div class="works__item">
-        <img src="img/works/3.jpg" alt="" class="works__item-image">
-        <div class="works__item-description">VIP Fitness</div>
-      </div>
-      <div class="works-modal">
-        <div class="works-modal__wrapper-left">
-          <div class="works-modal__image">
-            <img src="img/works/5.jpg" alt="">
-          </div>
-          <div class="works-modal__thumbs-list">
-            <div class="works-modal__thumbs-item">
+  <section class="works slide">
+    <div class="works__wrapper">
+      <h2 class="visually-hidden">Our works</h2>
+      <div class="works__list">
+        <div class="works__item">
+          <img src="img/works/1.jpg" alt="" class="works__item-image">
+          <div class="works__item-description">Studio Apartment in LA</div>
+        </div>
+        <div class="works__item">
+          <img src="img/works/1.jpg" alt="" class="works__item-image">
+          <div class="works__item-description">Studio Apartment in LA</div>
+        </div>
+        <div class="works__item">
+          <img src="img/works/1.jpg" alt="" class="works__item-image">
+          <div class="works__item-description">Studio Apartment in LA</div>
+        </div>
+        <div class="works__item">
+          <img src="img/works/1.jpg" alt="" class="works__item-image">
+          <div class="works__item-description">Studio Apartment in LA</div>
+        </div>
+        <div class="works-modal">
+          <div class="works-modal__wrapper-left">
+            <div class="works-modal__image">
               <img src="img/works/5.jpg" alt="">
             </div>
-            <div class="works-modal__thumbs-item">
-              <img src="img/works/6.jpg" alt="">
-            </div>
-            <div class="works-modal__thumbs-item">
-              <img src="img/works/7.jpg" alt="">
-            </div>
-            <div class="works-modal__thumbs-item">
-              <img src="img/works/8.jpg" alt="">
+            <div class="works-modal__thumbs-list">
+              <div class="works-modal__thumbs-item">
+                <img src="img/works/5.jpg" alt="">
+              </div>
+              <div class="works-modal__thumbs-item">
+                <img src="img/works/6.jpg" alt="">
+              </div>
+              <div class="works-modal__thumbs-item">
+                <img src="img/works/7.jpg" alt="">
+              </div>
+              <div class="works-modal__thumbs-item">
+                <img src="img/works/8.jpg" alt="">
+              </div>
             </div>
           </div>
+          <div class="works-modal__wrapper-right">
+            <h2 class="works-modal__title">Studio Apartment in LA</h2>
+            <p class="works-modal__description">Our company works with the Beverly Hills Real Estate Agent from the
+              "Nest
+              Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
+              this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
+              Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much
+              did
+              your neighbours.
+            </p>
+          </div>
+          <button class="works-modal__button-close">
+            <svg width="36" height="36">
+              <use xlink:href="#close"></use>
+            </svg>
+          </button>
         </div>
-        <div class="works-modal__wrapper-right">
-          <h2 class="works-modal__title">Studio Apartment in LA</h2>
-          <p class="works-modal__description">Our company works with the Beverly Hills Real Estate Agent from the "Nest
-            Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-            this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
-            Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
-            your neighbours.
-          </p>
-        </div>
-        <button class="works-modal__button-close">
-          <svg width="36" height="36">
-            <use xlink:href="#close"></use>
-          </svg>
-        </button>
       </div>
     </div>
   </section>
-  <section class="services">
+  <section class="services slide">
     <h2 class="services__title">Our Services</h2>
-    <ul class="services__list">
-      <li class="services__item">
-        <span class="services__item-label">Real Estate Los Angeles</span>
-        <div class="services__story services__story--active">
+    <div class="services__wrapper">
+      <ul class="services__list">
+        <li class="services__item services__item--active">
+          <span class="services__item-label">Real Estate Los Angeles</span>
+        </li>
+        <li class="services__item">
+          <span class="services__item-label">Real Estate Los Angeles</span>
+        </li>
+        <li class="services__item">
+          <span class="services__item-label">Real Estate Los Angeles</span>
+        </li>
+      </ul>
+      <ul class="services__story-list">
+        <li class="services__story services__story--active">
           <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
             Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
             this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
             Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
             your neighbours sold their Read More</p>
           <a href="" class="services__link">Read More</a>
-        </div>
-      </li>
-      <li class="services__item">
-        <span class="services__item-label">Real Estate Los Angeles</span>
-        <div class="services__story services__story--active">
+        </li>
+        <li class="services__story">
           <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
             Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
             this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
             Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
             your neighbours sold their Read More</p>
           <a href="" class="services__link">Read More</a>
-        </div>
-      </li>
-      <li class="services__item">
-        <span class="services__item-label">Real Estate Los Angeles</span>
-        <div class="services__story services__story--active">
-          <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
-            Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-            this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
-            Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
-            your neighbours sold their Read More</p>
-          <a href="" class="services__link">Read More</a>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <section class="story">
-    <h2 class="story__title">Our Story</h2>
-    <div class="story__list">
-      <div class="story__item">
-        <img src="img/story/1.jpg" alt="" class="story__item-image">
-      </div>
-      <div class="story__item">
-        <img src="img/story/2.jpg" alt="" class="story__item-image">
-      </div>
-      <div class="story__item">
-        <img src="img/story/3.jpg" alt="" class="story__item-image">
-      </div>
-      <div class="story__item">
-        <img src="img/story/4.jpg" alt="" class="story__item-image">
-      </div>
+        </li>
+      </ul>
     </div>
-    <div class="story__modal">
-      <img src="img/avatar.png" alt="">
-      <p class="story__modal-status">Arut, CEO & Founder of Bernini PD</p>
-      <p class="stoty__modal-description">Our company works with the Beverly Hills Real Estate Agent from the "Nest
-        Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why this is
-        a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los Angeles. You
-        can get a free home valuation and detailed analysis why this is a real price, for how much did your neighbours
-      </p>
+  </section>
+  <section class="story slide">
+    <h2 class="story__title">Our Story</h2>
+    <div class="story__wrapper">
+      <div class="story__list">
+        <div class="story__item story__item--big">
+          <img src="img/story/1.jpg" alt="" class="story__item-image">
+        </div>
+        <div class="story__list-in">
+          <div class="story__item">
+            <img src="img/story/2.jpg" alt="" class="story__item-image">
+          </div>
+          <div class="story__item">
+            <img src="img/story/3.jpg" alt="" class="story__item-image">
+          </div>
+          <div class="story__item">
+            <img src="img/story/4.jpg" alt="" class="story__item-image">
+          </div>
+        </div>
+      </div>
+      <div class="story__modal">
+        <img src="img/avatar.png" alt="">
+        <p class="story__modal-status">Arut, CEO & Founder of Bernini PD</p>
+        <p class="stoty__modal-description">Our company works with the Beverly Hills Real Estate Agent from the "Nest
+          Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why this
+          is
+          a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los Angeles.
+          You
+          can get a free home valuation and detailed analysis why this is a real price, for how much did your neighbours
+        </p>
+      </div>
     </div>
   </section>
 
   <div class="overlay">
-      <div class="contact-us">
-        <h2 class="contact-us__title">Contact Us</h2>
-        <form action="" class="form contact-us__form">
-          <div class="form__inputs-wrapper">
-            <div class="form__wrapper">
-              <label for="" class="form__label">
-                <span>First Name:</span>
-                <input type="text">
-              </label>
-              <label for="" class="form__label">
-                <span>Last Name:</span>
-                <input type="text">
-              </label>
-            </div>
-            <div class="form__wrapper">
-              <label for="" class="form__label">
-                <span>Email:</span>
-                <input type="email">
-              </label>
-            </div>
-            <div class="form__wrapper">
-              <label for="">
-                <span>Message (optional):</span>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </label>
-            </div>
+    <div class="contact-us">
+      <h2 class="contact-us__title">Contact Us</h2>
+      <form action="" class="form contact-us__form">
+        <div class="form__inputs-wrapper">
+          <div class="form__wrapper">
+            <label for="" class="form__label">
+              <span>First Name:</span>
+              <input type="text">
+            </label>
+            <label for="" class="form__label">
+              <span>Last Name:</span>
+              <input type="text">
+            </label>
           </div>
-          <div class="form__info-wrapper">
-            <div class="form__info-phone">
-              <span class="form__info-label">Phone Number:</span>
-              <a href="">+1 (323) 456-788</a>
-            </div>
-            <div class="form__info-email">
-              <span class="form__info-label">Email:</span>
-              <a href="">berninipd@gmail.com</a>
-            </div>
-            <div class="form__info-address">
-              <span class="form__info-label">Address</span>
-              <address>1095 Wilshire Blvd, Los Angeles<br>CA 90036</address>
-            </div>
-            <button class="button form__submit">Submit</button>
+          <div class="form__wrapper">
+            <label for="" class="form__label">
+              <span>Email:</span>
+              <input type="email">
+            </label>
           </div>
-        </form>
-        <button class="contact-us__close">
-          <svg width="36" height="36">
-            <use xlink:href="#close"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-success">
-        <p class="modal-success__text">Thank You!</p>
-        <p class="modal-success__message">Our representative will contact you</p>
-        <button class="modal-success__close">
-          <svg width="36" height="36">
-            <use xlink:href="#close"></use>
-          </svg>
-        </button>
-      </div>
+          <div class="form__wrapper">
+            <label for="">
+              <span>Message (optional):</span>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </label>
+          </div>
+        </div>
+        <div class="form__info-wrapper">
+          <div class="form__info-phone">
+            <span class="form__info-label">Phone Number:</span>
+            <a href="">+1 (323) 456-788</a>
+          </div>
+          <div class="form__info-email">
+            <span class="form__info-label">Email:</span>
+            <a href="">berninipd@gmail.com</a>
+          </div>
+          <div class="form__info-address">
+            <span class="form__info-label">Address</span>
+            <address>1095 Wilshire Blvd, Los Angeles<br>CA 90036</address>
+          </div>
+          <button class="button form__submit">Submit</button>
+        </div>
+      </form>
+      <button class="contact-us__close">
+        <svg width="36" height="36">
+          <use xlink:href="#close"></use>
+        </svg>
+      </button>
     </div>
+    <div class="modal-success">
+      <p class="modal-success__text">Thank You!</p>
+      <p class="modal-success__message">Our representative will contact you</p>
+      <button class="modal-success__close">
+        <svg width="36" height="36">
+          <use xlink:href="#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>

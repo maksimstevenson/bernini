@@ -2,4 +2,59 @@
     background-image: url("../img/story-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 720px;
+    padding: 160px 0;
+
+    overflow-x: hidden;
+}
+
+.works__wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.works__list {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.works__item {
+    width: 400px;
+    height: 400px;
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.029);
+        .works__item-description {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.works__item-description {
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.works-modal {
+    display: none;
 }
