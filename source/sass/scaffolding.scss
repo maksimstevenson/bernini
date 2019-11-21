@@ -52,15 +52,20 @@ html {
 }
 
 .button {
+  display: block;
+  text-align: center;
   background-color: #000000;
   color: #ffffff;
   font-size: 15px;
-  line-height: 18;
-  padding: 15px 35px;
+  line-height: 18px;
+  padding: 16px 38px;
 }
 
 .slide {
   height: 100vh;
+  box-sizing: border-box;
+  min-height: 720px;
+  position: relative;
 }
 
 //Описываем контейнер
@@ -73,6 +78,16 @@ html {
 @media (max-width: $desktop-width) {
   .container {
     max-width: $laptop-width-container;
+  }
+
+  .slide {
+    min-height: 768px;
+  }
+
+  .button {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 15px 38px;
   }
 }
 

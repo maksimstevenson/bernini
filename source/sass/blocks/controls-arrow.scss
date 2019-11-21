@@ -1,0 +1,73 @@
+.controls-arrow {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .controls-arrow {
+    position: absolute;
+    right: 50%;
+    margin-right: -13px;
+    height: 100%;
+    top: 0;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .controls-arrow__btn {
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .controls-arrow__btn--down {
+    margin-top: auto;
+  }
+
+  .controls-arrow__btn--up {
+    transform: rotate(180deg);
+  }
+
+  .controls-arrow__btn--white {
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  .controls-arrow--first {
+    padding-bottom: 73px;
+  }
+
+  .controls-arrow--last {
+    margin-right: -51px;
+    padding-bottom: 90px;
+  }
+
+  .controls-arrow__btn--last {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    width: 102px;
+    height: 41px;
+    position: relative;
+    margin-top: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 16px;
+      background-image: url("../img/arrow-last.png");
+      bottom: 42px;
+      left: 50%;
+      margin-left: -13px;
+    }
+  }
+}

@@ -14,7 +14,21 @@
     <include src="build/img/sprite/sprite.svg"></include>
   </div>
   <header class="header slide">
+    <div class="controls-arrow  controls-arrow--first">
+      <button class="controls-arrow__btn controls-arrow__btn--down" aria-label="arrow down" type="button">
+        <svg width="26" height="16">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </button>
+    </div>
     <div class="header__wrapper">
+      <ul class="cotrols">
+        <li class="cotrols__item"><button class="controls__btn controls__btn--active" type="button"
+            aria-label="First slide"></button></li>
+        <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Second slide"></button></li>
+        <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Third slide"></button></li>
+        <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Fourth slide"></button></li>
+      </ul>
       <div class="header__info-wrapper">
         <h1 class="header__title">Bernini Design</h1>
         <p class="header__description">Since 2016 we proudly provide design services</p>
@@ -27,21 +41,21 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="" class="social__link social__link--twitter">
+          <a href="" class="social__link social__link--twitter" aria-label="We're on Twitter">
             <svg width="25" height="25">
               <use xlink:href="#twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="" class="social__link">
+          <a href="" class="social__link" aria-label="We're on Instagram">
             <svg width="25" height="25">
               <use xlink:href="#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="" class="social__link">
+          <a href="" class="social__link" aria-label="We're on Facebook">
             <svg width="25" height="25">
               <use xlink:href="#facebook"></use>
             </svg>
@@ -52,6 +66,18 @@
 
   </header>
   <section class="works slide">
+    <div class="controls-arrow">
+      <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white" type="button"  aria-label="arrow up">
+        <svg width="26" height="16">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </button>
+      <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white" type="button"  aria-label="arrow down">
+        <svg width="26" height="16">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </button>
+    </div>
     <div class="works__wrapper">
       <h2 class="visually-hidden">Our works</h2>
       <div class="works__list">
@@ -112,6 +138,18 @@
     </div>
   </section>
   <section class="services slide">
+    <div class="controls-arrow">
+      <button class="controls-arrow__btn controls-arrow__btn--up" type="button"  aria-label="arrow up">
+        <svg width="26" height="16">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </button>
+      <button class="controls-arrow__btn controls-arrow__btn--down" type="button"  aria-label="arrow down">
+        <svg width="26" height="16">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </button>
+    </div>
     <h2 class="services__title">Our Services</h2>
     <div class="services__wrapper">
       <ul class="services__list">
@@ -119,10 +157,10 @@
           <span class="services__item-label">Real Estate Los Angeles</span>
         </li>
         <li class="services__item">
-          <span class="services__item-label">Real Estate Los Angeles</span>
+          <span class="services__item-label">Interior Design</span>
         </li>
         <li class="services__item">
-          <span class="services__item-label">Real Estate Los Angeles</span>
+          <span class="services__item-label">Interior Construction</span>
         </li>
       </ul>
       <ul class="services__story-list">
@@ -131,7 +169,7 @@
             Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
             this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
             Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
-            your neighbours sold their Read More</p>
+            your neighbours sold their</p>
           <a href="" class="services__link">Read More</a>
         </li>
         <li class="services__story">
@@ -139,13 +177,18 @@
             Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
             this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
             Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
-            your neighbours sold their Read More</p>
+            your neighbours sold their</p>
           <a href="" class="services__link">Read More</a>
         </li>
       </ul>
     </div>
   </section>
   <section class="story slide">
+      <div class="controls-arrow controls-arrow--last">
+          <button class="controls-arrow__btn controls-arrow__btn--last" type="button">
+              Go On Top
+          </button>
+        </div>
     <h2 class="story__title">Our Story</h2>
     <div class="story__wrapper">
       <div class="story__list">
