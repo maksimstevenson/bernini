@@ -22,13 +22,6 @@
       </button>
     </div>
     <div class="header__wrapper">
-      <ul class="cotrols">
-        <li class="cotrols__item"><button class="controls__btn controls__btn--active" type="button"
-            aria-label="First slide"></button></li>
-        <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Second slide"></button></li>
-        <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Third slide"></button></li>
-        <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Fourth slide"></button></li>
-      </ul>
       <div class="header__info-wrapper">
         <h1 class="header__title">Bernini Design</h1>
         <p class="header__description">Since 2016 we proudly provide design services</p>
@@ -67,12 +60,14 @@
   </header>
   <section class="works slide">
     <div class="controls-arrow">
-      <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white" type="button"  aria-label="arrow up">
+      <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white" type="button"
+        aria-label="arrow up">
         <svg width="26" height="16">
           <use xlink:href="#arrow"></use>
         </svg>
       </button>
-      <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white" type="button"  aria-label="arrow down">
+      <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white" type="button"
+        aria-label="arrow down">
         <svg width="26" height="16">
           <use xlink:href="#arrow"></use>
         </svg>
@@ -139,12 +134,12 @@
   </section>
   <section class="services slide">
     <div class="controls-arrow">
-      <button class="controls-arrow__btn controls-arrow__btn--up" type="button"  aria-label="arrow up">
+      <button class="controls-arrow__btn controls-arrow__btn--up" type="button" aria-label="arrow up">
         <svg width="26" height="16">
           <use xlink:href="#arrow"></use>
         </svg>
       </button>
-      <button class="controls-arrow__btn controls-arrow__btn--down" type="button"  aria-label="arrow down">
+      <button class="controls-arrow__btn controls-arrow__btn--down" type="button" aria-label="arrow down">
         <svg width="26" height="16">
           <use xlink:href="#arrow"></use>
         </svg>
@@ -184,11 +179,11 @@
     </div>
   </section>
   <section class="story slide">
-      <div class="controls-arrow controls-arrow--last">
-          <button class="controls-arrow__btn controls-arrow__btn--last" type="button">
-              Go On Top
-          </button>
-        </div>
+    <div class="controls-arrow controls-arrow--last">
+      <button class="controls-arrow__btn controls-arrow__btn--last" type="button">
+        Go On Top
+      </button>
+    </div>
     <h2 class="story__title">Our Story</h2>
     <div class="story__wrapper">
       <div class="story__list">
@@ -220,32 +215,39 @@
       </div>
     </div>
   </section>
+  <ul class="cotrols">
+    <li class="cotrols__item"><button class="controls__btn controls__btn--active" type="button"
+        aria-label="First slide"></button></li>
+    <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Second slide"></button></li>
+    <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Third slide"></button></li>
+    <li class="cotrols__item"><button class="controls__btn" type="button" aria-label="Fourth slide"></button></li>
+  </ul>
 
   <div class="overlay">
     <div class="contact-us">
       <h2 class="contact-us__title">Contact Us</h2>
       <form action="" class="form contact-us__form">
         <div class="form__inputs-wrapper">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--no-margin">
             <label for="" class="form__label">
               <span>First Name:</span>
               <input type="text">
             </label>
-            <label for="" class="form__label">
+            <label for="" class="form__label form__label--ml">
               <span>Last Name:</span>
               <input type="text">
             </label>
           </div>
           <div class="form__wrapper">
-            <label for="" class="form__label">
+            <label for="" class="form__label form__label--long">
               <span>Email:</span>
               <input type="email">
             </label>
           </div>
           <div class="form__wrapper">
-            <label for="">
+            <label for="" class="form__label form__label--long">
               <span>Message (optional):</span>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="" id="" cols="30" rows="5"></textarea>
             </label>
           </div>
         </div>
@@ -271,8 +273,7 @@
         </svg>
       </button>
     </div>
-  </div>
-  <div class="modal-success">
+    <div class="modal-success">
       <p class="modal-success__text">Thank You!</p>
       <p class="modal-success__message">Our representative will contact you</p>
       <button class="modal-success__close">
@@ -281,6 +282,8 @@
         </svg>
       </button>
     </div>
+  </div>
+  
 </body>
 
 </html>

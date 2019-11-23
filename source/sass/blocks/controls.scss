@@ -1,10 +1,9 @@
 .cotrols {
   @include reset-list;
-  position: absolute;
-  top: 50%;
+  position: fixed;
   margin-top: -85px;
-  right: 0;
-  margin-right: 128%;
+  top: 50%;
+  left: 6vw;
 }
 
 .cotrols__item {
