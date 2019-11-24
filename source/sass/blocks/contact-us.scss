@@ -109,3 +109,14 @@
     padding: 15px 50px;
     margin-top: auto;
 }
+
+
+
+@media (max-width: $desktop-width) {
+    .contact-us__form {
+        font-size: 16px;
+    }
+    .contact-us {
+        padding: 30px;
+    }
+}

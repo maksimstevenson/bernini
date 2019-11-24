@@ -16,7 +16,7 @@
     height: 100%;
 }
 
-.works__list {
+.works__list { 
     display: flex;
     position: absolute;
     left: 0;
@@ -135,6 +135,10 @@
 
     .works__list {
         margin-left: 153px;
+    }
+
+    .works-modal-overlay {
+        font-size: 16px;
     }
 }
 
