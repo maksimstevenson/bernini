@@ -6,6 +6,7 @@
   <title>Bernini</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- <link rel="preload" href="" as="font" crossorigin="anonymous"> Опционально -->
+  <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -35,9 +36,10 @@
       <ul class="social__list">
         <li class="social__item">
           <a href="" class="social__link social__link--twitter" aria-label="We're on Twitter">
-            <svg width="25" height="25">
-              <use xlink:href="#twitter"></use>
-            </svg>
+            <!-- <svg width="25" height="25">
+              <use xlink:href="#yelp"></use>
+            </svg> -->
+            <img src="img/yelp.png" width="25" height="25">
           </a>
         </li>
         <li class="social__item">
@@ -92,43 +94,45 @@
           <img src="img/works/1.jpg" alt="" class="works__item-image">
           <div class="works__item-description">Studio Apartment in LA</div>
         </div>
-        <div class="works-modal">
-          <div class="works-modal__wrapper-left">
-            <div class="works-modal__image">
+      </div>
+    </div>
+    <div class="works-modal-overlay ">
+      <div class="works-modal ">
+        <div class="works-modal__wrapper-left">
+          <div class="works-modal__image">
+            <img src="img/works/4.jpg" alt="">
+          </div>
+          <div class="works-modal__thumbs-list">
+            <div class="works-modal__thumbs-item">
               <img src="img/works/5.jpg" alt="">
             </div>
-            <div class="works-modal__thumbs-list">
-              <div class="works-modal__thumbs-item">
-                <img src="img/works/5.jpg" alt="">
-              </div>
-              <div class="works-modal__thumbs-item">
-                <img src="img/works/6.jpg" alt="">
-              </div>
-              <div class="works-modal__thumbs-item">
-                <img src="img/works/7.jpg" alt="">
-              </div>
-              <div class="works-modal__thumbs-item">
-                <img src="img/works/8.jpg" alt="">
-              </div>
+            <div class="works-modal__thumbs-item">
+              <img src="img/works/6.jpg" alt="">
+            </div>
+            <div class="works-modal__thumbs-item">
+              <img src="img/works/7.jpg" alt="">
+            </div>
+            <div class="works-modal__thumbs-item">
+              <img src="img/works/7.jpg" alt="">
             </div>
           </div>
-          <div class="works-modal__wrapper-right">
-            <h2 class="works-modal__title">Studio Apartment in LA</h2>
-            <p class="works-modal__description">Our company works with the Beverly Hills Real Estate Agent from the
-              "Nest
-              Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-              this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
-              Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much
-              did
-              your neighbours.
-            </p>
-          </div>
-          <button class="works-modal__button-close">
-            <svg width="36" height="36">
-              <use xlink:href="#close"></use>
-            </svg>
-          </button>
         </div>
+        <div class="works-modal__wrapper-right">
+          <h2 class="works-modal__title">Studio<br> Apartment in LA</h2>
+          <p class="works-modal__description">Our company works with the Beverly Hills Real Estate Agent from the
+            "Nest
+            Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
+            this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
+            Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much
+            did
+            your neighbours.
+          </p>
+        </div>
+        <button class="works-modal__button-close">
+          <svg width="36" height="36">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </section>
@@ -202,16 +206,24 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="story__overlay ">
       <div class="story__modal">
         <img src="img/avatar.png" alt="">
         <p class="story__modal-status">Arut, CEO & Founder of Bernini PD</p>
-        <p class="stoty__modal-description">Our company works with the Beverly Hills Real Estate Agent from the "Nest
+        <p class="story__modal-description">Our company works with the Beverly Hills Real Estate Agent from the "Nest
           Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why this
           is
           a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los Angeles.
           You
           can get a free home valuation and detailed analysis why this is a real price, for how much did your neighbours
         </p>
+
+        <button class="story__modal-close">
+          <svg width="36" height="36">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </section>
@@ -283,7 +295,7 @@
       </button>
     </div>
   </div>
-  
+
 </body>
 
 </html>
