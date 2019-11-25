@@ -160,4 +160,17 @@
   .story__list-in {
     display: none;
   }
+
+  .story__modal {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .story__modal-description {
+    line-height: 20px;
+    font-weight: 300;
+  }
+  .story__modal-status {
+    display: none;
+  }
 }
