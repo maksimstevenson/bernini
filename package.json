@@ -6,7 +6,10 @@
   ],
   "description": "Bernini",
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "autoprefixer": "9.5.x",
+    "babel-loader": "^8.0.6",
     "browser-sync": "2.26.x",
     "del": "^4.1.1",
     "gulp": "4.0.x",
@@ -22,7 +25,10 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "posthtml-include": "^1.2.0"
+    "jquery": "^3.4.1",
+    "posthtml-include": "^1.2.0",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
   },
   "engines": {
     "node": "8.15"

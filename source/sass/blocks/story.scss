@@ -33,6 +33,13 @@
   &--modal-open {
     display: flex;
   }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 }
 
 .story__modal {
@@ -58,6 +65,7 @@
   svg {
     fill: #ffffff;
   }
+  cursor: pointer;
 }
 
 .story__modal-status {
@@ -83,7 +91,6 @@
 }
 
 .story__list-in {
-  
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -114,7 +121,6 @@
   .story__overlay {
     font-size: 16px;
   }
-
 }
 
 @media (max-width: $laptop-width) {
@@ -172,5 +178,9 @@
   }
   .story__modal-status {
     display: none;
+  }
+
+  .story__list {
+    z-index: 1;
   }
 }
