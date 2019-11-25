@@ -1,0 +1,122 @@
+.contact-us {
+    display: block;
+
+    width: 815px;
+    padding: 40px;
+    box-shadow: 0px 0px 16px -5px rgba(0,0,0,0.75);
+
+    background: #FFFFFF;
+    min-height: 414px;
+
+    position: relative;
+
+    textarea {
+        resize: none;
+        width: 100%;
+        border: none;
+        background: rgba(196, 196, 196, 0.2);
+        height: 90px;
+    }
+
+}
+
+.contact-us__title {
+    font-size: 70px;
+    color: black;
+    margin: 24px 0;
+}
+
+.contact-us__form {
+    display: flex;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.form__inputs-wrapper {
+    width: 412px;
+    input {
+        height: 30px;
+        margin-top: 10px;
+        border: none;
+        background: rgba(196, 196, 196, 0.2);
+    }
+}
+
+.form__info-wrapper {
+    width: 295px;
+    margin-left: 30px;
+
+    width: 295px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    address {
+        font-style: normal;
+    }
+}
+
+.contact-us__close {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+}
+
+.form__wrapper {
+    display: flex;
+    margin-top: 20px;
+
+    &--no-margin {
+        margin-top: 0;
+    }
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+    &--ml {
+        margin-left: auto;
+    }
+
+    &--long {
+        width: 100%;
+    }
+}
+
+
+.form__info-phone, .form__info-email, .form__info-address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.form__info-label {
+    font-weight: 800;
+}
+
+
+.form__submit {
+    border: none;
+    padding: 15px 50px;
+    margin-top: auto;
+}
+
+
+
+@media (max-width: $desktop-width) {
+    .contact-us__form {
+        font-size: 16px;
+    }
+    .contact-us {
+        padding: 30px;
+    }
+}

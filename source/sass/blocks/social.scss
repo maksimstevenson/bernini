@@ -1,0 +1,31 @@
+.social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.social__list {
+    @include reset-list;
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+}
+
+@media (max-width: $desktop-width) {
+    .social__list {
+        width: 100px;
+        margin-right: 13px;
+    }
+
+    .social__link svg{
+      width: 20px;
+      height: 20px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .social__list {
+        display: none;
+    }
+}
