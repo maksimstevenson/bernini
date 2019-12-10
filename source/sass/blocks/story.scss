@@ -6,6 +6,11 @@
   padding-top: 62px;
 
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .story__title {
@@ -14,6 +19,8 @@
   text-align: center;
   margin: 0;
   color: white;
+
+  margin-bottom: auto;
 }
 
 .story__overlay {
@@ -79,11 +86,11 @@
 }
 
 .story__wrapper {
-  margin: 0 auto;
   max-width: 720px;
   display: flex;
-  margin-top: 75px;
-  padding-left: 13px;
+  
+  margin-bottom: auto;
+  margin-left: -150px;
 }
 
 .story__list {
@@ -114,8 +121,9 @@
   }
 
   .story__wrapper {
-    margin-top: 65px;
-    padding-left: 33px;
+    margin-top: 0;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .story__overlay {
@@ -130,7 +138,7 @@
   }
 
   .story__wrapper {
-    margin-top: 15.5vh;
+    margin-top: 0;
     padding-left: 0;
   }
 }
@@ -146,7 +154,7 @@
   }
 
   .story__wrapper {
-    margin-top: 13vh;
+    
     padding-left: 0;
     justify-content: center;
   }
