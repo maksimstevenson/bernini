@@ -137,9 +137,14 @@
   }
 
   .header__info-link {
-    width: 100%;
-    margin-left: 112px;
-    max-width: 150px;
+    width: auto;
+    max-width: 100%;
+    display: inline-flex;
+    margin: 0 auto;
     margin-top: calc(47vh - 202px);
+  }
+  .header__info-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
