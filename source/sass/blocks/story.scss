@@ -20,7 +20,7 @@
   margin: 0;
   color: white;
 
-  margin-bottom: auto;
+  margin-bottom: 100px;
 }
 
 .story__overlay {
@@ -112,6 +112,14 @@
   margin-bottom: 10px;
   &--big {
     width: 340px;
+  }
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.029);
+    .works__item-description {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 

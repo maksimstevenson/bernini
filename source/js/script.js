@@ -28,8 +28,8 @@ serviceItems.each((i, elem) => {
         $(serviceItems).removeClass('services__item--active');
         $(elem).addClass('services__item--active');
 
-        $(serviceStories).hide(100);
-        $(serviceStories[i]).show(700);
+        $(serviceStories).hide(0);
+        $(serviceStories[i]).fadeIn(500);
     })
 })
 
