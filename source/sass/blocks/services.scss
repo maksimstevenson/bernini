@@ -1,5 +1,5 @@
 .services {
-  padding: 60px 0 120px 0;
+  padding: 110px 0 120px 0;
   background-color: rgba(255, 255, 255, 0.9);
   background-image: url("../img/bg-main.jpg");
   background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .services__title {
-  font-size: 70px;
+  font-size: 110px;
   line-height: 85px;
   text-align: center;
   margin: 0;
@@ -15,7 +15,7 @@
 
 .services__item {
   display: flex;
-  padding: 17px 20px 14px 20px;
+  padding: 26px 20px 26px 25px;
 
   cursor: pointer;
 
@@ -33,15 +33,15 @@
 
 .services__wrapper {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 1200px;
   display: flex;
-  margin-top: 70px;
+  margin-top: 125px;
   padding-left: 16px;
 }
 
 .services__list {
     @include reset-list;
-    width: 370px;
+    width: 50%;
 }
 
 .services__item-label {
@@ -51,18 +51,87 @@
 .services__story-list {
     @include reset-list;
     background-color: #fff;
-    width: 370px;
-    padding: 17px 20px;
+    width: 50%;
+    padding: 26px 32px;
 }
 
 .services__text {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
     font-weight: 300;
 }
 
 .services__link {
     font-weight: 700;
+}
+
+@media (max-width: $desktop-large-width) {
+  .services {
+    padding: 60px 0 120px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url("../img/bg-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .services__title {
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .services__item {
+    display: flex;
+    padding: 17px 20px 14px 20px;
+  
+    cursor: pointer;
+  
+    &--active {
+      background-color: #fff;
+    }
+  }
+  
+  .services__story {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+  
+  .services__wrapper {
+    margin: 0 auto;
+    max-width: 750px;
+    display: flex;
+    margin-top: 70px;
+    padding-left: 16px;
+  }
+  
+  .services__list {
+      @include reset-list;
+      width: 370px;
+  }
+  
+  .services__item-label {
+      width: 370px;
+  }
+  
+  .services__story-list {
+      @include reset-list;
+      background-color: #fff;
+      width: 370px;
+      padding: 17px 20px;
+  }
+  
+  .services__text {
+      font-size: 20px;
+      margin: 0;
+      font-weight: 300;
+  }
+  
+  .services__link {
+      font-weight: 700;
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -104,7 +173,7 @@
   }
 
   .services__wrapper {
-    margin-top: 16.1vh;
+    margin-top: 8.1vh;
     padding-left: 137px;
   }
 

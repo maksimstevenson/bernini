@@ -11,6 +11,10 @@ body {
 
   background-color: #ffffff;
 
+  @media (min-width: $desktop-large-width + 1) {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 h1  {
