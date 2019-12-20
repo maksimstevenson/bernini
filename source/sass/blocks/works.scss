@@ -98,6 +98,7 @@
   h2 {
     font-size: 50px;
     line-height: 1.2;
+    margin: 0;
   }
   p {
     @media (min-width: $desktop-large-width + 1) {
@@ -109,8 +110,10 @@
 }
 
 .works-modal__image {
+  height: 678px;
   img {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -129,8 +132,10 @@
 .works-modal__thumbs-item {
   cursor: pointer;
   width: 25%;
+  height: 175px;
   img {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -284,12 +289,20 @@
   
   .works-modal__thumbs-list {
     display: flex;
+    height: auto;
   }
   
   .works-modal__wrapper-right {
     width: 50%;
     padding: 30px;
   }
+  .works-modal__image {
+    height: auto;
+  }
+  .works-modal__thumbs-item {
+    height: auto;
+  }
+
 }
 
 @media (max-width: $desktop-width) {

@@ -63,6 +63,11 @@ html {
   font-size: 15px;
   line-height: 18px;
   padding: 16px 38px;
+
+  @media (min-width: $desktop-large-width + 1) {
+    font-size: 20px;
+    padding: 25px 38px;
+  }
 }
 
 .slide {

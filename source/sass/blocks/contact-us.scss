@@ -16,6 +16,7 @@
         border: none;
         background: rgba(196, 196, 196, 0.2);
         height: 145px;
+        margin-top: 15px;
     }
 
 }
@@ -105,7 +106,7 @@
 
 .form__submit {
     border: none;
-    padding: 15px 50px;
+    padding: 25px 70px;
     margin-top: auto;
 }
 
@@ -128,6 +129,7 @@
             border: none;
             background: rgba(196, 196, 196, 0.2);
             height: 90px;
+            margin-top: 0;
         }
     
     }
@@ -231,5 +233,12 @@
     }
     .contact-us {
         padding: 30px;
+    }
+}
+
+@media (max-width: $laptop-width-container) {
+    .contact-us {
+        width: 650px;
+        font-size: 14px;
     }
 }
