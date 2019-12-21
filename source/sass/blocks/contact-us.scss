@@ -236,9 +236,78 @@
     }
 }
 
-@media (max-width: $laptop-width-container) {
+@media (max-width: $laptop-width) {
     .contact-us {
         width: 650px;
         font-size: 14px;
+    }
+    .form__inputs-wrapper {
+        width: 390px;
+    }
+    .form__label {
+        width: 180px;
+        &--long {
+            width: 100%;
+        }
+    }
+    .form__info-wrapper {
+        width: 170px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .contact-us {
+        width: 70%;
+    }
+    .contact-us__title {
+        display: none;
+    }
+    .form__inputs-wrapper {
+        width: 100%;
+    }
+    .form__info-wrapper {
+        width: 100%;
+    }
+    .contact-us__form {
+        flex-direction: column;
+    }
+    .form__wrapper {
+        flex-direction: column;
+    }
+    .form__label--ml {
+        margin: 0;
+    }
+    .form__label {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contact-us__form {
+        padding: 0;
+    }
+    .contact-us__close {
+        top: 5px;
+        right: 5px;
+
+        svg {
+            width: 25px;
+        }
+    }
+    .form__wrapper {
+        margin: 0;
+    }
+    .form__info-wrapper {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .form__info-address {
+        display: none;
+    }
+    .form__submit {
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .form__info-phone {
+        margin-bottom: 10px;
     }
 }
