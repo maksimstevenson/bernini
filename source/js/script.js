@@ -53,3 +53,7 @@ if ($(document).width() <= 760) {
         })
     })
 }
+
+var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical',
+  });

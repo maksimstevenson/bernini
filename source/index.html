@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- <link rel="preload" href="" as="font" crossorigin="anonymous"> Опционально -->
   <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -14,248 +15,252 @@
   <div style="display: none;">
     <include src="build/img/sprite/sprite.svg"></include>
   </div>
-  <header class="header slide">
-    <div class="controls-arrow  controls-arrow--first">
-      <button class="controls-arrow__btn controls-arrow__btn--down" aria-label="arrow down" type="button">
-        <svg width="26" height="16">
-          <use xlink:href="#arrow"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="header__wrapper">
-      <div class="header__info-wrapper">
-        <h1 class="header__title">Bernini Design</h1>
-        <p class="header__description">Since 2016 we proudly provide design services</p>
-        <a href="/" class="button header__info-link">Contact Us</a>
-      </div>
-      <div class="header__image">
-        <img src="img/header-image.jpg" alt="">
-      </div>
-    </div>
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="https://www.yelp.com/biz/bernini-design-los-angeles-2" target="_blank" class="social__link social__link--twitter" aria-label="We're on Twitter">
-            <svg width="25" height="25">
-              <use xlink:href="#yelp"></use>
-            </svg>
-            <!-- <img src="img/yelp.png" width="25" height="25"> -->
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.instagram.com/bernini_design/" target="_blank" class="social__link" aria-label="We're on Instagram">
-            <svg width="25" height="25">
-              <use xlink:href="#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.facebook.com/BerniniD/" target="_blank" class="social__link" aria-label="We're on Facebook">
-            <svg width="25" height="25">
-              <use xlink:href="#facebook"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-  </header>
-  <section class="works slide">
-    <div class="controls-arrow">
-      <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white" type="button"
-        aria-label="arrow up">
-        <svg width="26" height="16">
-          <use xlink:href="#arrow"></use>
-        </svg>
-      </button>
-      <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white" type="button"
-        aria-label="arrow down">
-        <svg width="26" height="16">
-          <use xlink:href="#arrow"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="works__wrapper">
-      <h2 class="visually-hidden">Our works</h2>
-      <div class="works__list">
-        <div class="works__item">
-          <img src="img/works/1.jpg" alt="" class="works__item-image">
-          <div class="works__item-description">Studio Apartment in LA</div>
-        </div>
-        <div class="works__item">
-          <img src="img/works/1.jpg" alt="" class="works__item-image">
-          <div class="works__item-description">Studio Apartment in LA</div>
-        </div>
-        <div class="works__item">
-          <img src="img/works/1.jpg" alt="" class="works__item-image">
-          <div class="works__item-description">Studio Apartment in LA</div>
-        </div>
-        <div class="works__item">
-          <img src="img/works/1.jpg" alt="" class="works__item-image">
-          <div class="works__item-description">Studio Apartment in LA</div>
-        </div>
-      </div>
-    </div>
-    <div class="works-modal-overlay">
-      <div class="works-modal-overlay__wrapper">
-        <div class="works-modal ">
-          <div class="works-modal__wrapper-left">
-            <div class="works-modal__image">
-              <img src="img/works/4.jpg" alt="">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <header class="header swiper-slide">
+            <div class="controls-arrow  controls-arrow--first">
+              <button class="controls-arrow__btn controls-arrow__btn--down" aria-label="arrow down" type="button">
+                <svg width="26" height="16">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
             </div>
-            <div class="works-modal__thumbs-list">
-              <div class="works-modal__thumbs-item">
-                <img src="img/works/5.jpg" alt="">
+            <div class="header__wrapper">
+              <div class="header__info-wrapper">
+                <h1 class="header__title">Bernini Design</h1>
+                <p class="header__description">Since 2016 we proudly provide design services</p>
+                <a href="/" class="button header__info-link">Contact Us</a>
               </div>
-              <div class="works-modal__thumbs-item">
-                <img src="img/works/6.jpg" alt="">
-              </div>
-              <div class="works-modal__thumbs-item">
-                <img src="img/works/7.jpg" alt="">
-              </div>
-              <div class="works-modal__thumbs-item">
-                <img src="img/works/7.jpg" alt="">
+              <div class="header__image">
+                <img src="img/header-image.jpg" alt="">
               </div>
             </div>
-          </div>
-          <div class="works-modal__wrapper-right">
-            <h2 class="works-modal__title">Studio<br> Apartment in LA</h2>
-            <p class="works-modal__description">Our company works with the Beverly Hills Real Estate Agent from the
-              "Nest
-              Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-              this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
-              Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much
-              did
-              your neighbours.
-            </p>
-          </div>
-          <button class="works-modal__button-close">
-            <svg width="36" height="36">
-              <use xlink:href="#close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="https://www.yelp.com/biz/bernini-design-los-angeles-2" target="_blank" class="social__link social__link--twitter" aria-label="We're on Twitter">
+                    <svg width="25" height="25">
+                      <use xlink:href="#yelp"></use>
+                    </svg>
+                    <!-- <img src="img/yelp.png" width="25" height="25"> -->
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.instagram.com/bernini_design/" target="_blank" class="social__link" aria-label="We're on Instagram">
+                    <svg width="25" height="25">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.facebook.com/BerniniD/" target="_blank" class="social__link" aria-label="We're on Facebook">
+                    <svg width="25" height="25">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        
+          </header>
+          <section class="works swiper-slide">
+            <div class="controls-arrow">
+              <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white" type="button"
+                aria-label="arrow up">
+                <svg width="26" height="16">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white" type="button"
+                aria-label="arrow down">
+                <svg width="26" height="16">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="works__wrapper">
+              <h2 class="visually-hidden">Our works</h2>
+              <div class="works__list">
+                <div class="works__item">
+                  <img src="img/works/1.jpg" alt="" class="works__item-image">
+                  <div class="works__item-description">Studio Apartment in LA</div>
+                </div>
+                <div class="works__item">
+                  <img src="img/works/1.jpg" alt="" class="works__item-image">
+                  <div class="works__item-description">Studio Apartment in LA</div>
+                </div>
+                <div class="works__item">
+                  <img src="img/works/1.jpg" alt="" class="works__item-image">
+                  <div class="works__item-description">Studio Apartment in LA</div>
+                </div>
+                <div class="works__item">
+                  <img src="img/works/1.jpg" alt="" class="works__item-image">
+                  <div class="works__item-description">Studio Apartment in LA</div>
+                </div>
+              </div>
+            </div>
+            <div class="works-modal-overlay">
+              <div class="works-modal-overlay__wrapper">
+                <div class="works-modal ">
+                  <div class="works-modal__wrapper-left">
+                    <div class="works-modal__image">
+                      <img src="img/works/4.jpg" alt="">
+                    </div>
+                    <div class="works-modal__thumbs-list">
+                      <div class="works-modal__thumbs-item">
+                        <img src="img/works/5.jpg" alt="">
+                      </div>
+                      <div class="works-modal__thumbs-item">
+                        <img src="img/works/6.jpg" alt="">
+                      </div>
+                      <div class="works-modal__thumbs-item">
+                        <img src="img/works/7.jpg" alt="">
+                      </div>
+                      <div class="works-modal__thumbs-item">
+                        <img src="img/works/7.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="works-modal__wrapper-right">
+                    <h2 class="works-modal__title">Studio<br> Apartment in LA</h2>
+                    <p class="works-modal__description">Our company works with the Beverly Hills Real Estate Agent from the
+                      "Nest
+                      Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
+                      this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
+                      Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much
+                      did
+                      your neighbours.
+                    </p>
+                  </div>
+                  <button class="works-modal__button-close">
+                    <svg width="36" height="36">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="services swiper-slide">
+            <div class="controls-arrow">
+              <button class="controls-arrow__btn controls-arrow__btn--up" type="button" aria-label="arrow up">
+                <svg width="26" height="16">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <button class="controls-arrow__btn controls-arrow__btn--down" type="button" aria-label="arrow down">
+                <svg width="26" height="16">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <h2 class="services__title">Our Services</h2>
+            <div class="services__wrapper">
+              <ul class="services__list">
+                <li class="services__item services__item--active">
+                  <span class="services__item-label">Real Estate Los Angeles</span>
+                </li>
+                <li class="services__item">
+                  <span class="services__item-label">Interior Design</span>
+                </li>
+                <li class="services__item">
+                  <span class="services__item-label">Interior Construction</span>
+                </li>
+              </ul>
+              <ul class="services__story-list">
+                <li class="services__story services__story--active">
+                  <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
+                    Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
+                    this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
+                    Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
+                    your neighbours sold their</p>
+                </li>
+                <li class="services__story">
+                  <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
+                    Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
+                    this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
+                    Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
+                    your neighbours sold their</p>
+                </li>
+                <li class="services__story">
+                  <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
+                    Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
+                    this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
+                    Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
+                    your neighbours sold their</p>
+                </li>
+              </ul>
+        
+            </div>
+            <div class="services__modale-modal-open">
+              <div class="services__mobile-modal-wrapper">
+                <div class="services__mobile-modal">
+                  <button class="services__mobile-modal-close">
+                    <svg width="36" height="36">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </button>
+                  <p>
+                    Our company works with the Beverly Hills Real Estate Agent from the "Nest
+                    Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
+                    this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
+                    Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
+                    your neighbours sold their</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="story swiper-slide">
+            <div class="controls-arrow controls-arrow--last">
+              <button class="controls-arrow__btn controls-arrow__btn--last" type="button">
+                To the Top
+              </button>
+            </div>
+            <h2 class="story__title">Our Story</h2>
+            <div class="story__wrapper">
+              <div class="story__list">
+                <div class="story__item story__item--big">
+                  <img src="img/story/1.jpg" alt="" class="story__item-image">
+                </div>
+                <div class="story__list-in">
+                  <div class="story__item">
+                    <img src="img/story/2.jpg" alt="" class="story__item-image">
+                  </div>
+                  <div class="story__item">
+                    <img src="img/story/3.jpg" alt="" class="story__item-image">
+                  </div>
+                  <div class="story__item">
+                    <img src="img/story/4.jpg" alt="" class="story__item-image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="story__overlay">
+              <div class="story__overlay-wrapper">
+                <div class="story__modal">
+                  <img src="img/avatar.png" alt="">
+                  <p class="story__modal-status">Arut, CEO & Founder of Bernini PD</p>
+                  <p class="story__modal-description">Our company works with the Beverly Hills Real Estate Agent from the "Nest
+                    Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
+                    this
+                    is
+                    a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los Angeles.
+                    You
+                    can get a free home valuation and detailed analysis why this is a real price, for how much did your
+                    neighbours
+                  </p>
+        
+                  <button class="story__modal-close">
+                    <svg width="36" height="36">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
     </div>
-  </section>
-  <section class="services slide">
-    <div class="controls-arrow">
-      <button class="controls-arrow__btn controls-arrow__btn--up" type="button" aria-label="arrow up">
-        <svg width="26" height="16">
-          <use xlink:href="#arrow"></use>
-        </svg>
-      </button>
-      <button class="controls-arrow__btn controls-arrow__btn--down" type="button" aria-label="arrow down">
-        <svg width="26" height="16">
-          <use xlink:href="#arrow"></use>
-        </svg>
-      </button>
-    </div>
-    <h2 class="services__title">Our Services</h2>
-    <div class="services__wrapper">
-      <ul class="services__list">
-        <li class="services__item services__item--active">
-          <span class="services__item-label">Real Estate Los Angeles</span>
-        </li>
-        <li class="services__item">
-          <span class="services__item-label">Interior Design</span>
-        </li>
-        <li class="services__item">
-          <span class="services__item-label">Interior Construction</span>
-        </li>
-      </ul>
-      <ul class="services__story-list">
-        <li class="services__story services__story--active">
-          <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
-            Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-            this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
-            Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
-            your neighbours sold their</p>
-        </li>
-        <li class="services__story">
-          <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
-            Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-            this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
-            Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
-            your neighbours sold their</p>
-        </li>
-        <li class="services__story">
-          <p class="services__text">Our company works with the Beverly Hills Real Estate Agent from the "Nest
-            Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-            this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
-            Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
-            your neighbours sold their</p>
-        </li>
-      </ul>
-
-    </div>
-    <div class="services__modale-modal-open">
-      <div class="services__mobile-modal-wrapper">
-        <div class="services__mobile-modal">
-          <button class="services__mobile-modal-close">
-            <svg width="36" height="36">
-              <use xlink:href="#close"></use>
-            </svg>
-          </button>
-          <p>
-            Our company works with the Beverly Hills Real Estate Agent from the "Nest
-            Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-            this is a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los
-            Angeles. You can get a free home valuation and detailed analysis why this is a real price, for how much did
-            your neighbours sold their</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="story slide">
-    <div class="controls-arrow controls-arrow--last">
-      <button class="controls-arrow__btn controls-arrow__btn--last" type="button">
-        To the Top
-      </button>
-    </div>
-    <h2 class="story__title">Our Story</h2>
-    <div class="story__wrapper">
-      <div class="story__list">
-        <div class="story__item story__item--big">
-          <img src="img/story/1.jpg" alt="" class="story__item-image">
-        </div>
-        <div class="story__list-in">
-          <div class="story__item">
-            <img src="img/story/2.jpg" alt="" class="story__item-image">
-          </div>
-          <div class="story__item">
-            <img src="img/story/3.jpg" alt="" class="story__item-image">
-          </div>
-          <div class="story__item">
-            <img src="img/story/4.jpg" alt="" class="story__item-image">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="story__overlay">
-      <div class="story__overlay-wrapper">
-        <div class="story__modal">
-          <img src="img/avatar.png" alt="">
-          <p class="story__modal-status">Arut, CEO & Founder of Bernini PD</p>
-          <p class="story__modal-description">Our company works with the Beverly Hills Real Estate Agent from the "Nest
-            Seekers" Real Estate Company in Los Angeles. You can get a free home valuation and detailed analysis why
-            this
-            is
-            a real price, for how much did your neighbours sold their Nest Seekers" Real Estate Company in Los Angeles.
-            You
-            can get a free home valuation and detailed analysis why this is a real price, for how much did your
-            neighbours
-          </p>
-
-          <button class="story__modal-close">
-            <svg width="36" height="36">
-              <use xlink:href="#close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
   <ul class="cotrols">
     <li class="cotrols__item"><button class="controls__btn controls__btn--active" type="button"
         aria-label="First slide"></button></li>
@@ -329,7 +334,9 @@
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
   <script src="js/script.min.js"></script>
+
 </body>
 
 </html>

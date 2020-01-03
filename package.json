@@ -38,5 +38,8 @@
     "build": "gulp build",
     "start": "gulp start"
   },
-  "version": "16.0.0"
+  "version": "16.0.0",
+  "dependencies": {
+    "fullpage.js": "^3.0.8"
+  }
 }
