@@ -346,10 +346,24 @@
 
   <script>
     new fullpage('#fullpage', {
-      //options here
-      // autoScrolling: true,
-      scrollHorizontally: true
+      scrollHorizontally: true,
+      navigation: true,
+      navigationPosition: 'left',
+      navigationTooltips: ['Home', 'Works', 'Our Services', 'Our Story'],
+      verticalCentered: false,
+      afterSlideLoad: function(section, origin, destination, direction){
+        if (origin.index === 0) {
+          document.querySelector('#fp-nav').style.background = 'red';
+        } else if (origin.index === 1) {
+          document.querySelector('#fp-nav').style.background = 'green';
+        }
+      },
+
     });
+    const btnDown = document.querySelector('.controls-arrow__btn--down');
+    btnDown.addEventListener('click', () => {
+      fullpage_api.moveSectionDown();
+    })
   </script>
 
 </body>
