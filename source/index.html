@@ -17,7 +17,7 @@
   <div id="fullpage">
     <header class="section header">
       <div class="controls-arrow  controls-arrow--first">
-        <button class="controls-arrow__btn controls-arrow__btn--down" aria-label="arrow down" type="button">
+        <button class="controls-arrow__btn controls-arrow__btn--down controll-down--js" aria-label="arrow down" type="button">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
           </svg>
@@ -66,13 +66,13 @@
     </header>
     <section class="section works">
       <div class="controls-arrow">
-        <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white" type="button"
+        <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white controll-up--js" type="button"
           aria-label="arrow up">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
           </svg>
         </button>
-        <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white" type="button"
+        <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white controll-down--js" type="button"
           aria-label="arrow down">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
@@ -145,12 +145,12 @@
     </section>
     <section class="section services">
       <div class="controls-arrow">
-        <button class="controls-arrow__btn controls-arrow__btn--up" type="button" aria-label="arrow up">
+        <button class="controls-arrow__btn controls-arrow__btn--up controll-up--js" type="button" aria-label="arrow up">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
           </svg>
         </button>
-        <button class="controls-arrow__btn controls-arrow__btn--down" type="button" aria-label="arrow down">
+        <button class="controls-arrow__btn controls-arrow__btn--down controll-down--js" type="button" aria-label="arrow down">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
           </svg>
@@ -218,7 +218,7 @@
     </section>
     <section class="section story">
       <div class="controls-arrow controls-arrow--last">
-        <button class="controls-arrow__btn controls-arrow__btn--last" type="button">
+        <button class="controls-arrow__btn controls-arrow__btn--last controll-top--js" type="button">
           To the Top
         </button>
       </div>
@@ -343,28 +343,6 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/fullpage.js"></script>
   <script src="js/script.min.js"></script>
-
-  <script>
-    new fullpage('#fullpage', {
-      scrollHorizontally: true,
-      navigation: true,
-      navigationPosition: 'left',
-      navigationTooltips: ['Home', 'Works', 'Our Services', 'Our Story'],
-      verticalCentered: false,
-      afterSlideLoad: function(section, origin, destination, direction){
-        if (origin.index === 0) {
-          document.querySelector('#fp-nav').style.background = 'red';
-        } else if (origin.index === 1) {
-          document.querySelector('#fp-nav').style.background = 'green';
-        }
-      },
-
-    });
-    const btnDown = document.querySelector('.controls-arrow__btn--down');
-    btnDown.addEventListener('click', () => {
-      fullpage_api.moveSectionDown();
-    })
-  </script>
 
 </body>
 

@@ -44,7 +44,48 @@ $('.story__item').click(() => {
 });
 
 
+const colorizeSlides = (index) => {
+    switch (index) {
+        case 0:
+            $('.fp-tooltip').css('color', '#333');
+            $('#fp-nav span').css('background', '#333');
+            break;
+        case 1:
+            $('.fp-tooltip').css('color', 'white');
+            $('#fp-nav span').css('background', 'white');
+            break;
+        case 2:
+            $('.fp-tooltip').css('color', '#333');
+            $('#fp-nav span').css('background', '#333');
+            break;
+        case 3:
+            $('.fp-tooltip').css('color', 'white');
+            $('#fp-nav span').css('background', 'white');
+            break;
+        default:
+            $('.fp-tooltip').css('color', 'white');
+            $('#fp-nav span').css('background', 'white');
+            break;
+    }
+}
+
+
+ new fullpage('#fullpage', {
+    scrollHorizontally: true,
+    navigation: $(document).width() <= 760 ? false : true,
+    navigationPosition: 'left',
+    navigationTooltips: ['Home', 'Works', 'Our Services', 'Our Story'],
+    verticalCentered: false,
+    afterLoad(origin, destination, direction) {
+        colorizeSlides(destination.index)
+    }
+
+});
+fullpage_api.setAllowScrolling(false);
+
 if ($(document).width() <= 760) {
+    fullpage_api.setAllowScrolling(false);
+    
     $(serviceItems).click(() => {
         $('.services__modale-modal-open').fadeIn();
 
@@ -53,3 +94,17 @@ if ($(document).width() <= 760) {
         })
     })
 }
+
+
+
+$('.controll-down--js').on('click', () => {
+    fullpage_api.moveSectionDown();
+})
+
+$('.controll-up--js').on('click', () => {
+    fullpage_api.moveSectionUp();
+})
+
+$('.controll-top--js').on('click', () => {
+    fullpage_api.moveTo();
+})
