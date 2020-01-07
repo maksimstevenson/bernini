@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- <link rel="preload" href="" as="font" crossorigin="anonymous"> Опционально -->
   <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,7 +18,8 @@
   <div id="fullpage">
     <header class="section header">
       <div class="controls-arrow  controls-arrow--first">
-        <button class="controls-arrow__btn controls-arrow__btn--down controll-down--js" aria-label="arrow down" type="button">
+        <button class="controls-arrow__btn controls-arrow__btn--down controll-down--js" aria-label="arrow down"
+          type="button">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
           </svg>
@@ -66,35 +68,52 @@
     </header>
     <section class="section works">
       <div class="controls-arrow">
-        <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white controll-up--js" type="button"
-          aria-label="arrow up">
+        <button class="controls-arrow__btn controls-arrow__btn--up controls-arrow__btn--white controll-up--js"
+          type="button" aria-label="arrow up">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
           </svg>
         </button>
-        <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white controll-down--js" type="button"
-          aria-label="arrow down">
+        <button class="controls-arrow__btn controls-arrow__btn--down controls-arrow__btn--white controll-down--js"
+          type="button" aria-label="arrow down">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="works__wrapper">
+      <div class="works__wrapper swiper-container">
         <h2 class="visually-hidden">Our works</h2>
-        <div class="works__list">
-          <div class="works__item">
+        <div class="works__list swiper-wrapper">
+          <div class="works__item swiper-slide">
             <img src="img/works/1.jpg" alt="" class="works__item-image">
             <div class="works__item-description">Studio Apartment in LA</div>
           </div>
-          <div class="works__item">
+          <div class="works__item swiper-slide">
             <img src="img/works/1.jpg" alt="" class="works__item-image">
             <div class="works__item-description">Studio Apartment in LA</div>
           </div>
-          <div class="works__item">
+          <div class="works__item swiper-slide">
             <img src="img/works/1.jpg" alt="" class="works__item-image">
             <div class="works__item-description">Studio Apartment in LA</div>
           </div>
-          <div class="works__item">
+          <div class="works__item swiper-slide">
+            <img src="img/works/1.jpg" alt="" class="works__item-image">
+            <div class="works__item-description">Studio Apartment in LA</div>
+          </div>
+          <div class="works__item swiper-slide">
+            <img src="img/works/1.jpg" alt="" class="works__item-image">
+            <div class="works__item-description">Studio Apartment in LA</div>
+          </div>
+
+          <div class="works__item swiper-slide">
+            <img src="img/works/1.jpg" alt="" class="works__item-image">
+            <div class="works__item-description">Studio Apartment in LA</div>
+          </div>
+          <div class="works__item swiper-slide">
+            <img src="img/works/1.jpg" alt="" class="works__item-image">
+            <div class="works__item-description">Studio Apartment in LA</div>
+          </div>
+          <div class="works__item swiper-slide">
             <img src="img/works/1.jpg" alt="" class="works__item-image">
             <div class="works__item-description">Studio Apartment in LA</div>
           </div>
@@ -150,7 +169,8 @@
             <use xlink:href="#arrow"></use>
           </svg>
         </button>
-        <button class="controls-arrow__btn controls-arrow__btn--down controll-down--js" type="button" aria-label="arrow down">
+        <button class="controls-arrow__btn controls-arrow__btn--down controll-down--js" type="button"
+          aria-label="arrow down">
           <svg width="26" height="16">
             <use xlink:href="#arrow"></use>
           </svg>
@@ -342,6 +362,7 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/fullpage.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/script.min.js"></script>
 
 </body>

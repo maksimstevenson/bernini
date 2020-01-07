@@ -108,3 +108,25 @@ $('.controll-up--js').on('click', () => {
 $('.controll-top--js').on('click', () => {
     fullpage_api.moveTo();
 })
+
+
+//Change image in works section
+$('.works-modal__thumbs-item').on('click', function() {
+    const ar = $(this.firstChild).attr('src');
+    $('.works-modal__image img').attr('src', ar);
+})
+
+
+//Swiper initializations
+const worksSlider = new Swiper('.works__wrapper', {
+    slidesPerView: 2,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.2,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 2.2,
+        }
+    }
+})
