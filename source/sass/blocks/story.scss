@@ -97,6 +97,10 @@
   display: flex;
 }
 
+.story__list-mobile {
+  display: none;
+}
+
 .story__list-in {
   display: flex;
   flex-wrap: wrap;
@@ -317,8 +321,12 @@
     }
   }
 
-  .story__list-in {
+  .story__list {
     display: none;
+  }
+
+  .story__list-mobile {
+    display: flex;
   }
 
   .story__modal {

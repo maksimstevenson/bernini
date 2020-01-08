@@ -123,10 +123,24 @@ const worksSlider = new Swiper('.works__wrapper', {
     breakpoints: {
         320: {
             slidesPerView: 1.2,
-            spaceBetween: 20
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination'
+            }
         },
         768: {
             slidesPerView: 2.2,
+            pagination: {
+                el: null
+            }
         }
     }
 })
+
+const ourStorySlider = new Swiper('.story__wrapper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.story__slider-pagination'
+    }
+});
