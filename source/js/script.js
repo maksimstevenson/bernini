@@ -93,6 +93,12 @@ if ($(document).width() <= 760) {
             $('.services__modale-modal-open').fadeOut();
         })
     })
+    $('.story__wrapper').addClass('swiper-container')
+
+    new Swiper('.story__wrapper', {
+        slidesPerView: 1
+    })
+    
 }
 
 
@@ -136,11 +142,3 @@ const worksSlider = new Swiper('.works__wrapper', {
         }
     }
 })
-
-const ourStorySlider = new Swiper('.story__wrapper', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-        el: '.story__slider-pagination'
-    }
-});
