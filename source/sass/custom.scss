@@ -15,6 +15,7 @@
         height: 10px;
         margin: 0;
         left: 0;
+        top: 0;
     }
 
     ul li a.active span {
@@ -22,7 +23,14 @@
         height: 10px;
         margin: 0;
         left: 0;
+        top: 0;
     }
+}
+
+#fp-nav ul li {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 12px;
 }
 
 #fp-nav ul li:hover a.active span {
@@ -37,14 +45,18 @@
 
 #fp-nav ul li .fp-tooltip.fp-left {
     left: 20px;
-    top: 1px;
+    top: -2px;
+}
+
+.section {
+    overflow: hidden;
 }
 
 .works__wrapper, 
 .header__wrapper, 
 .services__parallax-wrapper,
 .story__parallax-wrapper {
-    transform: translateY(-20%);
+    transform: translateY(-30%);
     transition: all 1s;
 }
 
