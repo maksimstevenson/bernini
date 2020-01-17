@@ -9,6 +9,35 @@
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+
+    ul li a span {
+        width: 10px;
+        height: 10px;
+        margin: 0;
+        left: 0;
+    }
+
+    ul li a.active span {
+        width: 10px;
+        height: 10px;
+        margin: 0;
+        left: 0;
+    }
+}
+
+#fp-nav ul li:hover a.active span {
+    margin: 0;
+    width: 10px;
+    height: 10px;
+}
+
+#fp-nav ul li:hover a span {
+    margin: 0;
+}
+
+#fp-nav ul li .fp-tooltip.fp-left {
+    left: 20px;
+    top: 1px;
 }
 
 .works__wrapper, 
