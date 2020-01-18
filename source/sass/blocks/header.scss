@@ -187,10 +187,11 @@
 
 @media (max-width: $tablet-width) {
   .header {
-    padding-top: 160px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 200px;
+    padding: 0;
+  }
+
+  .header__wrapper {
+    margin-top: 5vh;
   }
 
   .header__title {
@@ -211,7 +212,7 @@
     max-width: 100%;
     display: inline-flex;
     margin: 0 auto;
-    margin-top: calc(47vh - 202px);
+    margin-top: 15vh;
   }
   .header__info-wrapper {
     display: flex;

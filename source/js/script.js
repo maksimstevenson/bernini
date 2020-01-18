@@ -81,10 +81,10 @@ const colorizeSlides = (index) => {
     }
 
 });
-fullpage_api.setAllowScrolling(false);
+fullpage_api.setAllowScrolling(true);
 
 if ($(document).width() <= 760) {
-    fullpage_api.setAllowScrolling(false);
+    fullpage_api.setAllowScrolling(true);
     
     $(serviceItems).click(() => {
         $('.services__modale-modal-open').fadeIn();
