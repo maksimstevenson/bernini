@@ -155,7 +155,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 720px;
-    padding-top: 62px;
+    padding-top: 50px;
   
     overflow-x: hidden;
   
@@ -171,7 +171,7 @@
     margin: 0;
     color: white;
   
-    margin-bottom: 100px;
+    margin-bottom: 30px;
   }
   
   .story__overlay {
@@ -308,6 +308,10 @@
   .story {
     padding: 0;
     justify-content: center;
+    
+    &::before {
+      content: none;
+    }
   }
 
   .story__title {

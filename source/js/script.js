@@ -84,7 +84,7 @@ const colorizeSlides = (index) => {
 fullpage_api.setAllowScrolling(true);
 
 if ($(document).width() <= 760) {
-    fullpage_api.setAllowScrolling(true);
+    fullpage_api.setAllowScrolling(false);
     
     $(serviceItems).click(() => {
         $('.services__modale-modal-open').fadeIn();
@@ -96,7 +96,9 @@ if ($(document).width() <= 760) {
     $('.story__wrapper').addClass('swiper-container')
 
     new Swiper('.story__wrapper', {
-        slidesPerView: 1
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        centeredSlides: true
     })
     
 }

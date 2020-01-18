@@ -30,7 +30,7 @@
     overflow: visible;
   }
   .swiper-slide {
-    height: auto;
+    
   }
 }
 
@@ -185,7 +185,7 @@
     background-image: url("../img/story-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 160px 0;
+    padding: 0;
     overflow: hidden;
   
     position: relative;
@@ -356,6 +356,10 @@
   .works {
     padding: 0;
     background-position-x: -150px;
+
+    &::before {
+      content: none;
+    }
   }
 
   .works__list {
