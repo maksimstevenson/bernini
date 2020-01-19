@@ -85,7 +85,6 @@ fullpage_api.setAllowScrolling(true);
 
 if ($(document).width() <= 760) {
     fullpage_api.setAllowScrolling(false);
-    
     $(serviceItems).click(() => {
         $('.services__modale-modal-open').fadeIn();
 
@@ -96,8 +95,11 @@ if ($(document).width() <= 760) {
     $('.story__wrapper').addClass('swiper-container')
 
     new Swiper('.story__wrapper', {
-        slidesPerView: 1.2,
-        spaceBetween: 20,
+        slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.story__slider-pagination'
+            },
         centeredSlides: true
     })
     
@@ -130,17 +132,22 @@ const worksSlider = new Swiper('.works__wrapper', {
     slidesPerView: 2,
     breakpoints: {
         320: {
-            slidesPerView: 1.2,
+            slidesPerView: 3.6,
             spaceBetween: 20,
             pagination: {
                 el: '.swiper-pagination'
             }
         },
         768: {
-            slidesPerView: 2.2,
+            slidesPerView: 2.75,
             pagination: {
                 el: null
             }
+        },
+        1500: {
+            slidesPerView: 2.2
         }
+
+
     }
 })

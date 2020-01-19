@@ -1,5 +1,6 @@
 .services {
-  padding: 110px 0 120px 0;
+  // padding: 110px 0 120px 0;
+  padding-top: 50px;
   background-color: rgba(255, 255, 255, 0.9);
   background-image: url("../img/bg-main.jpg");
   background-size: cover;
@@ -137,7 +138,7 @@
 
 @media (max-width: $desktop-width) {
   .services {
-    padding: 80px 0 120px 0;
+    // padding: 80px 0 120px 0;
     background-position-x: right;
   }
 
@@ -251,6 +252,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+    z-index: 1;
 
     background: rgba(255, 255, 255, 0.26);
     backdrop-filter: blur(1px);

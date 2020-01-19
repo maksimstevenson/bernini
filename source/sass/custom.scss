@@ -78,3 +78,27 @@
         transition: all 0.8s;
     }
 }
+
+.works .swiper-pagination {
+    bottom: -30px;
+    left: calc(50vw - 51px);
+    width: auto;
+    .swiper-pagination-bullet-active {
+        background: white;
+    }
+    .swiper-pagination-bullet {
+        background: white;
+        margin-right: 5px;
+    }
+}
+
+.story .story__slider-pagination {
+    margin-top: 10px;
+    .swiper-pagination-bullet-active {
+        background: white;
+    }
+    .swiper-pagination-bullet {
+        background: white;
+        margin-right: 5px;
+    }
+}

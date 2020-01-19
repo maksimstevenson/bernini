@@ -2,10 +2,11 @@
   background-image: url("../img/story-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 160px 0;
   overflow: hidden;
 
   position: relative;
+  display: flex;
+  align-items: center;
 
   &::before {
     content: "";
@@ -23,9 +24,8 @@
 .works__wrapper {
   max-width: 1100px;
   margin: 0 auto;
-
+  height: 500px;
   position: relative;
-  height: 100%;
   &.swiper-container {
     overflow: visible;
   }
@@ -196,12 +196,12 @@
     margin: 0 auto;
   
     position: relative;
-    height: 100%;
+    height: 400px;
   }
   
   .works__list {
     display: flex;
-    position: absolute;
+    // position: absolute;
     left: 0;
     // top: 50%;
     transform: translate(0, -50%);
@@ -210,7 +210,6 @@
   
   .works__item {
     width: 400px;
-    height: 400px;
     margin-right: 33px;
     position: relative;
     overflow: hidden;
@@ -310,7 +309,7 @@
   
   .works-modal__thumbs-list {
     display: flex;
-    height: auto;
+    height: 20%;
   }
   
   .works-modal__wrapper-right {
@@ -318,7 +317,7 @@
     padding: 30px;
   }
   .works-modal__image {
-    height: auto;
+    height: 80%;
   }
   .works-modal__thumbs-item {
     height: auto;
@@ -331,7 +330,6 @@
     padding: 183px 0;
     background-position-x: -150px;
   }
-
   .works__list {
     margin-left: 153px;
   }
@@ -368,7 +366,7 @@
 
   .works__item {
     width: 300px;
-    height: 300px;
+    height: 100%;
     margin-right: 22px;
   }
 
@@ -380,11 +378,11 @@
   }
   .works-modal__wrapper-left {
     width: 100%;
-    height: 375px;
+    height: 50vh;
   }
   .works-modal__wrapper-right {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     font-size: 16px;
     max-height: 190px;
 
@@ -396,8 +394,11 @@
   }
 
   .works-modal__image {
-    height: 300px;
+    height: 80%;
     display: flex;
+  }
+  .works-modal__thumbs-list {
+    height: 20%;
   }
   .works-modal__description {
     margin: 0;
@@ -407,5 +408,9 @@
     top: 0;
     background: rgba(0, 0, 0, 0.4);
     padding: 8px;
+  }
+
+  .works__wrapper {
+    height: 300px;
   }
 }

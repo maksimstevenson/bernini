@@ -257,13 +257,17 @@
 
 @media (max-width: $tablet-width) {
     .contact-us {
-        width: 70%;
+        width: 80%;
+        padding: 15px;
     }
     .contact-us__title {
         display: none;
     }
     .form__inputs-wrapper {
         width: 100%;
+        input {
+            margin-top: 5px;
+        }
     }
     .form__info-wrapper {
         width: 100%;
@@ -279,7 +283,11 @@
     }
     .form__label {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 10px;
+
+        &--first {
+            margin-top: 0;
+        }
     }
     .contact-us__form {
         padding: 0;
@@ -297,7 +305,7 @@
     }
     .form__info-wrapper {
         margin: 0;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .form__info-address {
         display: none;
@@ -305,9 +313,12 @@
     .form__submit {
         display: inline-block;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .form__info-phone {
+        margin-bottom: 10px;
+    }
+    .form__info-email {
         margin-bottom: 10px;
     }
 }

@@ -9,12 +9,19 @@
     margin-right: -13px;
     height: 100%;
     top: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    z-index: 100;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &--one {
+      z-index: 1;
+      height: auto;
+      top: auto;
+      bottom: 0;
+    }
   }
 
   .controls-arrow__btn {
@@ -49,6 +56,11 @@
   .controls-arrow--last {
     margin-right: -51px;
     padding-bottom: 90px;
+    z-index: 1;
+    height: auto;
+    top: auto;
+    bottom: 20px;
+    padding: 0;
   }
 
   .controls-arrow__btn--last {

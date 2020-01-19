@@ -150,14 +150,18 @@
 @media (max-width: $laptop-width) {
   .header {
     background-position-x: right;
-    padding-top: 165px;
+    padding-top: 125px;
     padding-bottom: 60px;
     padding-left: 182px;
     padding-right: 167px;
+
+    justify-content: space-between;
   }
 
   .header__wrapper {
     justify-content: center;
+    margin: 0;
+    flex-grow: 1;
   }
 
   .header__title {
@@ -180,7 +184,7 @@
     width: 100%;
     margin-left: 117px;
     max-width: 150px;
-    margin-top: calc(62vh - 232px);
+    margin-top: auto;
     margin-bottom: 20px;
   }
 }
@@ -192,6 +196,7 @@
 
   .header__wrapper {
     margin-top: 5vh;
+    padding-bottom: 15vh;
   }
 
   .header__title {
@@ -212,7 +217,8 @@
     max-width: 100%;
     display: inline-flex;
     margin: 0 auto;
-    margin-top: 8vh;
+    // margin-top: 8vh;
+    margin-top: auto;
   }
   .header__info-wrapper {
     display: flex;
