@@ -85,7 +85,7 @@ fullpage_api.setAllowScrolling(true);
 
 if ($(document).width() <= 760) {
 
-    var swiper = new Swiper('.works-modal__wrapper-right', {
+    new Swiper('.works-modal__wrapper-right', {
         direction: 'vertical',
         slidesPerView: 'auto',
         freeMode: true,
