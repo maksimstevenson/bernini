@@ -12,9 +12,11 @@ $('.header__info-link').click((evt) => {
 
 $('.works__item').click(() => {
     $('.works-modal-overlay').fadeIn();
+    fullpage_api.setAllowScrolling(false);
 
     $('.works-modal__button-close').click(() => {
         $('.works-modal-overlay').fadeOut();
+        fullpage_api.setAllowScrolling(true);
     })
 })
 
@@ -49,22 +51,32 @@ const colorizeSlides = (index) => {
         case 0:
             $('.fp-tooltip').css('color', '#333');
             $('#fp-nav span').css('background', '#333');
+            $('#fp-nav span').css('box-shadow', 'none');
+            $('#fp-nav .active span').css('box-shadow', '0 0 0 1px #fff, 0 0 0 2px #000');
             break;
         case 1:
             $('.fp-tooltip').css('color', 'white');
             $('#fp-nav span').css('background', 'white');
+            $('#fp-nav span').css('box-shadow', 'none');
+            $('#fp-nav .active span').css('box-shadow', '0 0 0 1px #333, 0 0 0 2px rgba(255,255,255,.76)');
             break;
         case 2:
             $('.fp-tooltip').css('color', '#333');
             $('#fp-nav span').css('background', '#333');
+            $('#fp-nav span').css('box-shadow', 'none');
+            $('#fp-nav .active span').css('box-shadow', '0 0 0 1px #fff, 0 0 0 2px #000');
             break;
         case 3:
             $('.fp-tooltip').css('color', 'white');
             $('#fp-nav span').css('background', 'white');
+            $('#fp-nav span').css('box-shadow', 'none');
+            $('#fp-nav .active span').css('box-shadow', '0 0 0 1px #333, 0 0 0 2px rgba(255,255,255,.76)');
             break;
         default:
             $('.fp-tooltip').css('color', 'white');
             $('#fp-nav span').css('background', 'white');
+            $('#fp-nav span').css('box-shadow', 'none');
+            $('#fp-nav .active span').css('box-shadow', '0 0 0 1px #333, 0 0 0 2px rgba(255,255,255,.76)');
             break;
     }
 }
@@ -85,20 +97,9 @@ fullpage_api.setAllowScrolling(true);
 
 if ($(document).width() <= 760) {
 
-    new Swiper('.works-modal__wrapper-right', {
-        direction: 'vertical',
-        slidesPerView: 'auto',
-        freeMode: true,
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-        mousewheel: true,
-      });
-
-    fullpage_api.setAllowScrolling(false);
+    fullpage_api.setAllowScrolling(true);
     $(serviceItems).click(() => {
         $('.services__modale-modal-open').fadeIn();
-
         $('.services__mobile-modal-close').click(() => {
             $('.services__modale-modal-open').fadeOut();
         })
@@ -113,6 +114,18 @@ if ($(document).width() <= 760) {
             },
         centeredSlides: true
     })
+
+    new Swiper('.works-modal__wrapper-right', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        mousewheel: true,
+        freeMode: true,
+      });
+
+      $('.works-modal-overlay').hide();
     
 }
 
