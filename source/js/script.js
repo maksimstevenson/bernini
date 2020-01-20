@@ -84,7 +84,6 @@ const colorizeSlides = (index) => {
 fullpage_api.setAllowScrolling(true);
 
 if ($(document).width() <= 760) {
-    $('.works-modal__wrapper-right').optiscroll();
     fullpage_api.setAllowScrolling(false);
     $(serviceItems).click(() => {
         $('.services__modale-modal-open').fadeIn();
