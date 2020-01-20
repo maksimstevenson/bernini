@@ -84,6 +84,17 @@ const colorizeSlides = (index) => {
 fullpage_api.setAllowScrolling(true);
 
 if ($(document).width() <= 760) {
+
+    var swiper = new Swiper('.works-modal__wrapper-right', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        freeMode: true,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        mousewheel: true,
+      });
+
     fullpage_api.setAllowScrolling(false);
     $(serviceItems).click(() => {
         $('.services__modale-modal-open').fadeIn();
