@@ -2,9 +2,20 @@
 $('.header__info-link').click((evt) => {
     evt.preventDefault();
     $('.overlay').fadeIn();
+    $('.form__label.form__label--first input').focus();
 
     $('.contact-us__close').click(() => {
         $('.overlay').fadeOut();
+    })
+    $('.overlay').on('click', (evt) => {
+        if (evt.target.className === 'overlay__wrapper') {
+            $('.overlay').fadeOut();
+        }
+    })
+    $(document).on('keydown', (evt) => {
+        if(evt.keyCode === 27) {
+            $('.overlay').fadeOut();
+        }
     })
 })
 
@@ -17,6 +28,12 @@ $('.works__item').click(() => {
     $('.works-modal__button-close').click(() => {
         $('.works-modal-overlay').fadeOut();
         fullpage_api.setAllowScrolling(true);
+    })
+    $('.works-modal-overlay').on('click', (evt) => {
+        if (evt.target.className === 'works-modal-overlay__wrapper') {
+            $('.works-modal-overlay').fadeOut();
+            fullpage_api.setAllowScrolling(true);
+        }
     })
 })
 
@@ -43,6 +60,11 @@ $('.story__item').click(() => {
     $('.story__modal-close').click(() => {
         $('.story__overlay').fadeOut();
     });
+    $('.story__overlay').on('click', (evt) => {
+        if (evt.target.className === 'story__overlay-wrapper') {
+            $('.story__overlay').fadeOut();
+        }
+    })
 });
 
 
@@ -102,6 +124,11 @@ if ($(document).width() <= 760) {
         $('.services__modale-modal-open').fadeIn();
         $('.services__mobile-modal-close').click(() => {
             $('.services__modale-modal-open').fadeOut();
+        })
+        $('.services__mobile-modal-wrapper').on('click', (evt) => {
+            if(evt.target.className === 'services__mobile-modal-wrapper') {
+                $('.services__modale-modal-open').fadeOut();
+            }
         })
     })
     $('.story__wrapper').addClass('swiper-container')
@@ -169,7 +196,7 @@ const worksSlider = new Swiper('.works__wrapper', {
             }
         },
         1500: {
-            slidesPerView: 2.2
+            slidesPerView: 2.5
         }
 
 
