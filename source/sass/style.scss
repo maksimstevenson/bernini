@@ -1,3 +1,4 @@
+@import "fullpage.scss";
 @import "normalize.scss";
 @import "fonts.scss";
 @import "variables.scss";
@@ -15,3 +16,5 @@
 @import "blocks/modal-success.scss";
 //Тут остальные импорта
 @import "blocks/footer.scss";
+
+@import "custom.scss";
